@@ -112,6 +112,10 @@ describe RestClient::Request do
   it "determines the Net::HTTP class to instantiate by the method name" do
     @request.net_http_request_class(:put).should == Net::HTTP::Put
   end
+  
+  it "does not escape colons in request paramaters" do
+    @request.process_url_params('http://example.com/resource', {:params => {:filter => 'key:val'}}).should == 'http://example.com/resource?filter=key:val'
+  end
 
   describe "user headers" do
     it "merges user headers with the default headers" do
