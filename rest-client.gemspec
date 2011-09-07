@@ -5,14 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rest-client}
-  s.version = "1.6.7"
+  s.version = "1.6.7.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Adam Wiggins}, %q{Julien Kirch}]
-  s.date = %q{2011-08-24}
+  s.authors = ["Adam Wiggins", "Julien Kirch"]
+  s.date = %q{2011-09-07}
+  s.default_executable = %q{restclient}
   s.description = %q{A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.}
   s.email = %q{rest.client@librelist.com}
-  s.executables = [%q{restclient}]
+  s.executables = ["restclient"]
   s.extra_rdoc_files = [
     "README.rdoc",
     "history.md"
@@ -50,10 +51,10 @@ Gem::Specification.new do |s|
     "spec/restclient_spec.rb"
   ]
   s.homepage = %q{http://github.com/archiloque/rest-client}
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
+  s.require_paths = ["lib"]
+  s.rubygems_version = %q{1.5.1}
   s.summary = %q{Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.}
-  s.test_files = [%q{spec/abstract_response_spec.rb}, %q{spec/base.rb}, %q{spec/exceptions_spec.rb}, %q{spec/integration}, %q{spec/integration/certs}, %q{spec/integration/certs/equifax.crt}, %q{spec/integration/certs/verisign.crt}, %q{spec/integration/request_spec.rb}, %q{spec/integration_spec.rb}, %q{spec/master_shake.jpg}, %q{spec/payload_spec.rb}, %q{spec/raw_response_spec.rb}, %q{spec/request2_spec.rb}, %q{spec/request_spec.rb}, %q{spec/resource_spec.rb}, %q{spec/response_spec.rb}, %q{spec/restclient_spec.rb}]
+  s.test_files = ["spec/abstract_response_spec.rb", "spec/base.rb", "spec/exceptions_spec.rb", "spec/integration", "spec/integration_spec.rb", "spec/master_shake.jpg", "spec/payload_spec.rb", "spec/raw_response_spec.rb", "spec/request2_spec.rb", "spec/request_spec.rb", "spec/resource_spec.rb", "spec/response_spec.rb", "spec/restclient_spec.rb", "spec/integration/certs", "spec/integration/request_spec.rb", "spec/integration/certs/equifax.crt", "spec/integration/certs/verisign.crt"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
